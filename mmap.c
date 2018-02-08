@@ -4,19 +4,6 @@
 #include <sys/mman.h>
 #define asm_code {0x48,0x89,0xf8,0x48,0x83,0xc0,0x00,0xc3}
 
-#if 0
-#define add_code "\x48\x89\xf8\x48\x83\xc0\x05\xc3" 
-/* mov rax, rdi
- * add rax, 0x5
- * ret
- */
-
-#define sub_code "\x48\x89\xf8\x48\x83\xe8\x05\xc3" 
-/* mov rax, rdi
- * sub rax, 0x5
- * ret
- */
-#endif
 
 typedef int (*rFunc)(int);
 rFunc func;
