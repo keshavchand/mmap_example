@@ -49,5 +49,6 @@ int main(int argc, char * argv[]){
 
     printf("%d\n", func(i));
 
+    brk(func);
     return 0;
 }
